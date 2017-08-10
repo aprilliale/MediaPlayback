@@ -18,6 +18,8 @@ package com.example.android.classicalmusicquiz;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -346,6 +348,17 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    public static class MediaReceiver extends BroadcastReceiver {
+        public MediaReceiver() {
+        }
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            MediaButtonReceiver.handleIntent(mMediaSession, intent);
+        }
+
+    }
+
     private class MySessionCallback extends MediaSessionCompat.Callback {
         @Override
         public void onPlay() {
@@ -353,6 +366,8 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         @Override
+
+
         public void onPause() {
             mExoPlayer.setPlayWhenReady(false);
         }
