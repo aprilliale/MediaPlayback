@@ -39,8 +39,8 @@ Disini kita akan mempelajari tentang aplikasi media player yang akan digunakan u
 <img src="https://user-images.githubusercontent.com/22130552/29484355-f4bd59ea-84e6-11e7-848a-e77ca0ed8b2f.png" width="290" height="515"/>
 
 # Identitas
-Nama : Erron Lolha Aprillia 
-Kelas : XII RPL 2
-No : 13 
-NIS : 4705/1424.070 
-Sekolah : Telkom School Malang 
+Nama : Erron Lolha Aprillia </br>
+Kelas : XII RPL 2 </br>
+No : 13 </br>
+NIS : 4705/1424.070 </br>
+Sekolah : Telkom School Malang </br>
